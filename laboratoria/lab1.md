@@ -28,7 +28,7 @@ for i in numbers:
     print(i)
 ```
 
-**Zadanie**  
+==**Zadanie**==  
 Porównaj powyzsze programy i wymień wszystkie różnice między językiem C i Python, które są widoczne w tym przykładzie. Uruchom przykładowy program zarówno w IDLE, jak i w terminalu.
 
 # Definiowanie funkcji
@@ -43,8 +43,8 @@ print(f'{a} * {b} = {result}')
 ```  
 Powyższy przykład używa tak zwanych `f-strings` do formatowania napisu. Więcej na ten temat: https://docs.python.org/3/tutorial/inputoutput.html
 
-**Zadanie**  
-Napisz funkcję, która zapyta uzytkownika o jego imię i wypisze komunikat z uzyciem tego imienia (np. "Witaj, Jan Kowalski!"). Potrzebną funkcję biblioteczną znajdziesz w [dokumentacji.](https://docs.python.org/3/library/functions.html#built-in-functions)
+==**Zadanie**==  
+Napisz funkcję, która zapyta uzytkownika o jego imię i wypisze komunikat z uzyciem tego imienia (np. "Witaj, Jan Kowalski!"). Potrzebną funkcję biblioteczną znajdziesz w [dokumentacji.](https://docs.python.org/3/library/functions.html#built-in-functions) Pamiętaj o użyciu `f-strings`.
 
 # Zarządzanie modułami
   
@@ -166,10 +166,10 @@ for element in lista:
   
 **Zadania**  
   
-1. Stwórz listę zawierającą liczby całkowite od 1 do 10 000, używajac `range` [(dokumentacja)](https://docs.python.org/3/library/stdtypes.html#range). Następnie użyj pętli, aby każdą liczbę w liście zwiększyć o 1. Użyj modułu `timeit` by sprawdzić, ile czasu zajmie wykonanie tej pętli.
+1. Stwórz listę zawierającą liczby całkowite od 1 do 10 000, używajac `range` [(dokumentacja)](https://docs.python.org/3/library/stdtypes.html#range). Następnie użyj pętli, aby każdą liczbę w liście zwiększyć o 1.  
 2. Napisz funkcję, ktora zwróci listę krotek. Każda krotka to para liczb naturalnych dająca sumę `2*n`. Wartosc `n` jest parametrem funkcji. Np. lista dla n=50: `[(0, 100), (1, 99), (2, 98), ..., (99, 1), (100, 0)]`
-3. Stwórz słownik przechowujący w kluczu imię i nazwisko osoby, a w wartości datę jej urodzin. Do słownika zapisz 3 różne osoby. Do przechowania daty użyj typu `date` z modułu `datetime` ([dokumentacja](https://docs.python.org/3/library/datetime.html#examples-of-usage-date)). Następnie wypisz za pomoca pętli `for` wszystkie rekordy w słowniku w formacie 'Imie Nazwisko ur. dd-mm-rr'.
-4. Przetestuj, które z omówionych powyżej typow danych można użyc w roli klucza w słowniku. Następnie porównaj swoje obserwacje z informacjami w [tym artykule](https://wiki.python.org/moin/DictionaryKeys).
+3. Stwórz słownik przechowujący w kluczu imię i nazwisko osoby, a w wartości datę jej urodzin (wartości mają być zdefiniowane w programie, nie wpisane przez użytkownika). Do słownika zapisz 3 różne osoby. Do przechowania daty użyj typu `date` z modułu `datetime` ([dokumentacja](https://docs.python.org/3/library/datetime.html#examples-of-usage-date)).
+4. Przetestuj, które z omówionych powyżej typów danych można użyc w roli klucza w słowniku. Następnie porównaj swoje obserwacje z informacjami w [tym artykule](https://wiki.python.org/moin/DictionaryKeys).
 5. Poczytaj o [listach składanych](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions). Przepisz poniższe pętle tak, by używały składania list (tworzyły tę samą listę w jednej linii).
 ```python
 values = []
@@ -206,9 +206,10 @@ for i in range(10):
 
 for i in range(5):
     if i % 2 == 0:
-        continue  # Skip printing when i is 2
+        continue
     print(i)
 
+# iterowanie po strukturze
 lista = [1, 2, 3]
 for element in lista:
     print(lista)
@@ -239,18 +240,18 @@ def http_error(status):
   
 Więcej przykładów i szczegółów w [dokumentacji](https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools).
   
-**Zadania**
+**Zadania**  
+
 1. Wypisz wszystkie liczby od 1 do 50, jednak jeżeli liczba jest podzielna przez:
 trzy – zamiast liczby wypisz „Fizz”,
 pięć – wypisz „Buzz”,
 jeśli jest podzielna zarówno przez trzy i pięć - wypisz „FizzBuzz”.
-
-2. Stwórz prostą grę polegającą na zgadywaniu losowej liczby z zakresu 1-100 wygenerowanej przez komputer. Uzyj modułu `random`.
-Użytkownik wprowadza liczbę, a program nakierowuje gracza przez podpowiedzi, np. "Podałeś za małą/za dużą liczbę" lub w przypadku trafienia informuje o wygranej. Możesz opcjonalnie dodać warunek maksymalnie `n` prób. 
+2. Napisz program, który symuluje 1000 rzutów sześcienną kostką, a następnie podaje użytkownikowi ile razy wypadła dana ścianka kostki. Użyj modułu `random` (poszukaj odpowiedniej metody w [dokumentacji](https://docs.python.org/3/library/random.html#functions-for-integers)).  
+3. Stwórz prostą grę polegającą na zgadywaniu przez gracza losowej liczby całkowitej z zakresu 1-100, wygenerowanej przez komputer. Użytkownik wprowadza liczbę, a program nakierowuje gracza przez podpowiedzi, np. "Podałeś za małą/za dużą liczbę" lub w przypadku trafienia informuje o wygranej. Możesz opcjonalnie dodać warunek maksymalnie `n` prób.  
 Pytanie "przy okazji": jaka jest najlepsza strategia na wygraną?
+4. Dowiedz się, jak iterować pętlą `for` przez słownik, a następnie dodaj do zadania z osobami i datami urodzin wypisanie wszystkich rekordów w słowniku w formacie '{klucz slownika} : {wartosc - data}'.
+5. Napisz program, który pyta użytkownika o dzień tygodnia i zwraca odpowiednio napis `dzień roboczy`, `weekend` lub `nieprawidlowa wartosc`.
   
-3. Napisz program, który pyta użytkownika o dzień tygodnia i zwraca odpowiednio napis `dzień roboczy`, `weekend` lub `nieprawidlowa wartosc`. 
-
 # Obsługa i manipulacja napisami (typ str)
 
 Python udostępnia bardzo bogatą bibliotekę funkcji wbudowanych, za pomocą których można manipulować łańcuchami znaków w wygodny i zwięzły sposób.
@@ -297,6 +298,7 @@ print(s.rstrip())  # '  hello!'
 ```python
 s1 = "Hello, world!"
 print(s.replace("world", "Python"))  # 'Hello, Python!'
+
 s2 = "apple,banana,orange"
 print(text.split(","))  # ['apple', 'banana', 'orange']
 ```
