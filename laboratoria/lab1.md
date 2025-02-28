@@ -28,7 +28,7 @@ for i in numbers:
     print(i)
 ```
 
-==**Zadanie**==  
+<span style="background-color: #d7bde2"><b>Zadanie</b></span>  
 Porównaj powyzsze programy i wymień wszystkie różnice między językiem C i Python, które są widoczne w tym przykładzie. Uruchom przykładowy program zarówno w IDLE, jak i w terminalu.
 
 # Definiowanie funkcji
