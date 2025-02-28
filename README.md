@@ -1,7 +1,7 @@
 # Programowanie skryptowe  
 
 [Kontakt i terminy konsultacji](https://ii.up.krakow.pl/pracownicy-up/marczak/)  
-Zalczenie z oceną: aktywność na zajęciach oraz kolokwium zaliczeniowe  
+Zaliczenie z oceną: aktywność na zajęciach oraz kolokwium zaliczeniowe  
 20h | 5 spotkań x 4h
   
 ### Laboratoria  
