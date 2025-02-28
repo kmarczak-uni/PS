@@ -231,10 +231,10 @@ trzy – zamiast liczby wypisz „Fizz”,
 pięć – wypisz „Buzz”,
 jeśli jest podzielna zarówno przez trzy i pięć - wypisz „FizzBuzz”.
 2. Napisz program, który symuluje 1000 rzutów sześcienną kostką, a następnie podaje użytkownikowi ile razy wypadła dana ścianka kostki. Użyj modułu `random` (poszukaj odpowiedniej metody w [dokumentacji](https://docs.python.org/3/library/random.html#functions-for-integers)).  
-3. Stwórz prostą grę polegającą na zgadywaniu przez gracza losowej liczby całkowitej z zakresu 1-100, wygenerowanej przez komputer. Użytkownik wprowadza liczbę, a program nakierowuje gracza przez podpowiedzi, np. "Podałeś za małą/za dużą liczbę" lub w przypadku trafienia informuje o wygranej. Możesz opcjonalnie dodać warunek maksymalnie `n` prób.  
+3. Stwórz prostą grę polegającą na zgadywaniu przez gracza losowej liczby całkowitej z zakresu `1-100`, wygenerowanej przez komputer. Użytkownik wprowadza liczbę, a program nakierowuje gracza przez podpowiedzi, np. "Podałeś za małą/za dużą liczbę" lub w przypadku trafienia informuje o wygranej. Możesz opcjonalnie dodać warunek maksymalnie `n` prób.  
 Pytanie "przy okazji": jaka jest najlepsza strategia na wygraną?
-4. Dowiedz się, jak iterować pętlą `for` przez słownik, a następnie dodaj do zadania z osobami i datami urodzin wypisanie wszystkich rekordów w słowniku w formacie '{klucz slownika} : {wartosc - data}'.
-5. Napisz program, który pyta użytkownika o dzień tygodnia i zwraca odpowiednio napis `dzień roboczy`, `weekend` lub `nieprawidlowa wartosc`.
+4. Dowiedz się, jak iterować pętlą `for` przez słownik, a następnie dodaj do zadania z osobami i datami urodzin wypisanie wszystkich rekordów w słowniku w formacie `'{klucz slownika} : {wartosc - data}'`.
+5. Napisz program, który pyta użytkownika o dzień tygodnia i zwraca odpowiednio napis `dzien roboczy`, `weekend` lub `nieprawidlowa wartosc`.
   
 # Obsługa i manipulacja napisami (typ str)
 
