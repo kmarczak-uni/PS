@@ -315,7 +315,10 @@ Przykład: `print(censor("tekst do cenzury", "tekst"))  # "***** do cenzury"`
 3. Napisz funkcję, która zliczy unikalne słowa w danym napisie. Np. dla napisu "test auto test abc" zliczy : 2 wystąpienia słowa test, 1 auto i 1 abc. Zastanów się, jakiej struktury danych najlepiej użyć do tego zadania.
 
 4. Napisz funkcję, która poprawi zdanie tak, by zaczynało się od wielkiej litery i kończyło kropką.  
-Przykład: `print(correct("popraw mnie"))  # "Popraw mnie."`  
+Przykład: `print(correct("popraw mnie"))  # "Popraw mnie."`
+
+5. Napisz funkcję, która usunie powtarzające się słowa z napisu (zwróci napis bez pierwotnych powtórzeń).  
+Przykład: `print(remove_duplicated_words("to to jest pewien napis napis napis do poprawy"))  # "to jest pewien napis do poprawy"
   
 # Narzędzie `pip` - instalacja zewnętrznych modułów Pythona
 Standardowa biblioteka Pythona posiada bardzo wiele przydatnych modułów. Jeśli potrzebujemy modułu spoza tej biblioteki, zainstalujemy go za pomocą narzędzia `pip` (https://pypi.org/).  
