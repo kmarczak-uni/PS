@@ -1,0 +1,3 @@
+# Generatory
+# Filtrowanie
+# Dekoratory
