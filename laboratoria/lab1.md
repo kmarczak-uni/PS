@@ -28,7 +28,7 @@ for i in numbers:
     print(i)
 ```
 
-<span style="background-color: #d7bde2"><b>Zadanie</b></span>  
+## Zadanie   
 Porównaj powyzsze programy i wymień wszystkie różnice między językiem C i Python, które są widoczne w tym przykładzie. Uruchom przykładowy program zarówno w IDLE, jak i w terminalu.
 
 # Definiowanie funkcji
@@ -43,8 +43,8 @@ print(f'{a} * {b} = {result}')
 ```  
 Powyższy przykład używa tak zwanych `f-strings` do formatowania napisu. Więcej na ten temat: https://docs.python.org/3/tutorial/inputoutput.html
 
-==**Zadanie**==  
-Napisz funkcję, która zapyta uzytkownika o jego imię i wypisze komunikat z uzyciem tego imienia (np. "Witaj, Jan Kowalski!"). Potrzebną funkcję biblioteczną znajdziesz w [dokumentacji.](https://docs.python.org/3/library/functions.html#built-in-functions) Pamiętaj o użyciu `f-strings`.
+## Zadanie  
+Napisz funkcję, która zapyta użytkownika o jego imię i wypisze komunikat z uzyciem tego imienia (np. "Witaj, Jan Kowalski!"). Potrzebną funkcję biblioteczną znajdziesz w [dokumentacji.](https://docs.python.org/3/library/functions.html#built-in-functions) Pamiętaj o użyciu `f-strings`.
 
 # Zarządzanie modułami
   
@@ -66,27 +66,11 @@ import pandas as pd
 import math as moj_ulubiony_przedmiot
 ```
 
-**Zadanie**  
+### Instalacja nowych modułów spoza biblioteki standardowej opisana jest na końcu laboratorium.
+  
+## Zadanie  
 Sprawdź działanie instrukcji `import this`.
   
-Standardowa biblioteka Pythona posiada bardzo wiele przydatnych modułów. Jeśli potrzebujemy modułu spoza tej biblioteki, zainstalujemy go za pomocą narzędzia `pip` (https://pypi.org/).  
-  
-Najwazniejsze komendy `pip`:  
-  
-Wypisanie dostępnych modułów  
-`pip list`  
-  
-Zapisanie modułów do pliku  
-`pip freeze > requirements.txt`  
-Uwaga: requirements.txt to powszechnie przyjęta konwencja przechowywania listy modułów wymaganych do uruchomienia danego programu w Pythonie.  
-  
-Instalacja i usuwanie modułów  
-```
-pip install [--user] nazwa_pakietu[==konkretna wersja]
-pip install -r requirements.txt
-pip uninstall nazwa_pakietu
-```
-
 # Typy zmiennych
 
 Python jest językiem dynamicznie typowanym. To znaczy, ze typ zmiennej jest określany w trakcie przypisania wartości i może się zmienić w czasie działania programu.
@@ -240,7 +224,7 @@ def http_error(status):
   
 Więcej przykładów i szczegółów w [dokumentacji](https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools).
   
-**Zadania**  
+## Zadania  
 
 1. Wypisz wszystkie liczby od 1 do 50, jednak jeżeli liczba jest podzielna przez:
 trzy – zamiast liczby wypisz „Fizz”,
@@ -321,7 +305,7 @@ print(s.endswith("!"))
 
 Więcej w [dokumentacji](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
-**Zadania**
+## Zadania
 1. Napisz funkcję, która zwraca inicjały (wielkimi literami) dla podanego imienia i nazwiska.
 Przykład: `print(get_initials("katarzyna marczak"))  # "KM"`
 
@@ -332,3 +316,22 @@ Przykład: `print(censor("tekst do cenzury", "tekst"))  # "***** do cenzury"`
 
 4. Napisz funkcję, która poprawi zdanie tak, by zaczynało się od wielkiej litery i kończyło kropką.  
 Przykład: `print(correct("popraw mnie"))  # "Popraw mnie."`  
+  
+# Narzędzie `pip` - instalacja zewnętrznych modułów Pythona
+Standardowa biblioteka Pythona posiada bardzo wiele przydatnych modułów. Jeśli potrzebujemy modułu spoza tej biblioteki, zainstalujemy go za pomocą narzędzia `pip` (https://pypi.org/).  
+  
+Najwazniejsze komendy `pip`:  
+  
+Wypisanie dostępnych modułów  
+`pip list`  
+  
+Zapisanie modułów do pliku  
+`pip freeze > requirements.txt`  
+Uwaga: requirements.txt to powszechnie przyjęta konwencja przechowywania listy modułów wymaganych do uruchomienia danego programu w Pythonie.  
+  
+Instalacja i usuwanie modułów  
+```
+pip install [--user] nazwa_pakietu[==konkretna wersja]
+pip install -r requirements.txt
+pip uninstall nazwa_pakietu
+```
